@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Employees";
+}
+
+
+<div id="datatree"></div>
+
+
+
+@section scripts{
+	<script type="text/javascript">
+	$(document).ready(function(){
+			$('#datatree').jstree({
+			'core':{
+				
+				'data': @Html.Raw(ViewBag.Json),
+					"themes": {
+						"responsive": false
+					}
+			},
+				"types": {
+					"default": {
+						"icon": "bi bi-person-circle"
+					},
+					"file": {
+						"icon": "bi bi-person-circle"
+					}
+				},
+				"plugins": ["types"]
+		});
+	});
+	
+</script>
+
+
+}
