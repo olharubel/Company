@@ -1,8 +1,8 @@
 # Company
---
+
 ## Online catalogue which shows employees hierarchy
 
---
+
 ## To open a project from a repo
 ### Open Visual Stuido
 ### Select Clone a repository
